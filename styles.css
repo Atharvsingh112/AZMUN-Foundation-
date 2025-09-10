@@ -200,4 +200,48 @@ body { background: var(--bg); color: var(--text-primary); font-family: Inter, sy
   .contact-grid { grid-template-columns: 1fr; }
 }
 
+/* --- Mobile-first improvements for all elements --- */
+@media (max-width: 480px) {
+  html, body { font-size: 15px; }
+  .container { padding: 0 8px; }
+  .site-header { height: auto; min-height: 60px; }
+  .header-inner { flex-direction: column; align-items: flex-start; height: auto; padding: 10px 0; gap: 8px; }
+  .logo-image { height: 60px; }
+  .nav { flex-wrap: wrap; gap: 8px; }
+  .nav-link { padding: 6px 8px; font-size: 15px; }
+  .hero { padding: 32px 0; }
+  .hero-inner { grid-template-columns: 1fr; gap: 16px; }
+  .hero-title { font-size: 26px; }
+  .hero-subtitle { font-size: 15px; margin-bottom: 16px; }
+  .hero-actions { flex-direction: column; gap: 8px; }
+  .figurines-frame { padding: 8px; gap: 8px; }
+  .figurine, .figurine.hero-pair { height: 120px; }
+  .cards-section, .updates-section, .provide-section, .gallery-section, .join-section, .contact-section, .timeline-section { padding: 24px 0 40px; }
+  .section-title { font-size: 20px; }
+  .section-subtitle { font-size: 13px; margin-bottom: 12px; }
+  .cards-grid, .updates-grid, .provide-grid, .gallery-grid, .contact-grid { grid-template-columns: 1fr !important; gap: 12px; }
+  .card-image, .gallery-image, .update-icon, .provide-image, .join-image { height: 100px !important; border-radius: 8px; }
+  .card-body, .update-card, .feature-card { padding: 10px; }
+  .card-title, .update-title, .feature-title { font-size: 16px; }
+  .card-text, .update-text, .feature-text, .join-text, .hero-subtitle, .timeline-event p { font-size: 13px; }
+  .panel { border-radius: 10px; }
+  .timeline { padding-left: 24px; }
+  .timeline-date { left: -24px; font-size: 13px; padding: 2px 4px; }
+  .timeline-event { padding-left: 12px; margin-bottom: 12px; }
+  .timeline-event::before { width: 7px; height: 7px; }
+  .timeline-event h3 { font-size: 14px; }
+  .timeline-event-date { font-size: 11px; }
+  .cta-block { padding: 16px 0 24px; }
+  .site-footer { padding: 16px 0; }
+  .footer-inner { flex-direction: column; gap: 8px; }
+  .footer-logo { height: 60px; margin-bottom: 8px; }
+  .footer-tagline { font-size: 12px; }
+  .footer-center { flex-direction: column; gap: 6px; }
+  .footer-links { flex-direction: column; gap: 6px; }
+  .footer-links a { font-size: 13px; }
+  .footer-contact { font-size: 12px; max-width: 100%; }
+  .social-icons { gap: 6px; }
+  .social-icons a { width: 20px; height: 20px; }
+}
+
 
