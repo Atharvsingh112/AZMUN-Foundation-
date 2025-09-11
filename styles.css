@@ -242,6 +242,28 @@ body { background: var(--bg); color: var(--text-primary); font-family: Inter, sy
   .footer-contact { font-size: 12px; max-width: 100%; }
   .social-icons { gap: 6px; }
   .social-icons a { width: 20px; height: 20px; }
+
+  /* Hide images on home page and all pages for mobile */
+  .hero-image, .hero-illustration, .figurines-frame, .figurine, .provide-image, .join-image, .gallery-image, .card-image, .update-icon, .provide-illustration, .join-media, .update-media {
+    display: none !important;
+  }
+  /* Stack all content vertically */
+  .hero-inner,
+  .provide-inner,
+  .join-inner,
+  .cards-grid,
+  .updates-grid,
+  .provide-grid,
+  .gallery-grid,
+  .contact-grid,
+  .footer-inner,
+  .timeline,
+  .two-col {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: stretch !important;
+  }
 }
 
 
